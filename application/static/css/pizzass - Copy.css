@@ -1,0 +1,140 @@
+.cloud
+{
+	position: absolute;
+	animation-name: float;
+	animation-duration: 20s;
+	animation-iteration-count:infinite;
+}
+.cloud_1
+{
+	position: absolute;
+	animation-name: float;
+	animation-duration: 20s;
+	animation-timing-function: linear;
+	animation-iteration-count:infinite;
+	height: 10%;
+	width:10%;
+	-webkit-animation-delay:0s;
+	top:0;
+	left:0;
+}
+
+.slow_cloud_1
+{
+	position: absolute;
+	animation-name: float;
+	animation-duration: 40s;
+	animation-iteration-count:infinite;
+	animation-timing-function: linear;
+	height: 10%;
+	width:10%;
+	-webkit-animation-delay:0s;
+	top:0;
+	left:30%;
+}
+
+
+.navcloud
+{
+	z-index: 100;
+	position:absolute;
+	width: 200%;
+	height:75%;
+	margin-top:-20%;
+	margin-left:-40%;
+}
+
+.bottomcloud
+{
+	z-index: 100;
+	position:absolute;
+	width: 200%;
+	height:75%;
+	margin-bottom:-10000%;
+	margin-left:-40%;	
+}
+
+.navbar
+{
+	z-index:101;
+	margin-bottom: 0!important;
+	background: transparent;
+}
+
+.nav-item
+{
+	padding: 0 100px;
+	font-family:"cloudy", Garamond;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: white;
+	font-size:200%;
+	color: white;
+	animation-name: float_2;
+	animation-play-state: paused;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+
+}
+
+.nav-item:hover
+{
+	animation-play-state: running;
+}
+
+.navbar-brand
+{
+	padding: 0 100px;
+	font-family:"cloudy", Garamond;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+	font-size:200%;	
+}
+
+@font-face{
+  font-family:'cloudy';
+  src: url(../fonts/AlphaClouds.ttf) format("truetype"); 
+}
+
+
+.sky
+{
+	height:100%;
+	width:100%;
+	animation-name: fadein;
+	animation-duration: 3s;
+	animation-timing-function:linear;
+	background: -moz-linear-gradient(top, #e1ffff 0%, #e1ffff 7%, #e1ffff 12%, #fdffff 26%, 
+  	#e6f8fd 50%, #c8eefb 75%, #bee4f8 75%, #c8eefb 81%, #b1d8f5 91%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #e1ffff 0%,#e1ffff 7%,#e1ffff 12%,#fdffff 26%,
+		#e6f8fd 50%,#c8eefb 75%,#bee4f8 75%,#c8eefb 81%,#b1d8f5 91%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #e1ffff 0%,#e1ffff 7%,#e1ffff 12%,#fdffff 
+		26%,#e6f8fd 50%,#c8eefb 75%,#bee4f8 75%,#c8eefb 81%,#b1d8f5 91%); 
+}
+
+
+@keyframes float{
+	from{transform: translateX(0px);}
+	to{transform: translateX(90vw);}
+}
+
+
+@keyframes fadein{
+	0% {opacity:0;}
+    66% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@keyframes float_2 {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}

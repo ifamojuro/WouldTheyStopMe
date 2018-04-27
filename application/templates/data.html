@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block main %}
+
+<div id="motivation">
+	<span> <h1>Why I Did This</h1></span>
+	
+</div>
+
+
+<div id="help-me">
+		<span><h1>How You can Help</h1></span>
+
+		<span><h2>1.Give Me Data For an Experiment</h2></span>
+
+		<span><h2>2.Keep Me Accountable</h2></span>	
+		<div>
+		<a href="https://github.com/ifamojuro/stop_and_frisk_app"><strong> Check out the Github Repo for this project here! 
+		</strong></a> If you're technically inclined, please check my code. One of the goals of this project is to stress the need for transparency in data managment/analyisis. I also aim to hold my self responsible to this.
+		</div>
+
+		<span><h2>3. Check out the Data, Do something </h2></span>	
+
+		<div style="text-align:center;">
+			<h1> Data Sources </h1>
+			<table style="width:100%">
+			  <tr>
+			    <th>City</th>
+			    <th>Data Source</th> 
+			    <th>Differences between my data and source data</th>
+			    <th>Link to My data</th>
+			  </tr>
+			  <tr>
+			    <td>New York City Police Deaprtment</td>
+			    <td><a href="https://www1.nyc.gov/site/nypd/stats/reports-analysis/stopfrisk.page">New York City Stop and Frisk Database</a></td> 
+			    <td>Smith</td> 
+			    <td><a href= "/data_download/NYC">Download here </a></td>
+			  </tr>
+			  <tr>
+			    <td>City of Boston Police Department</td>
+			    <td><a href="https://data.boston.gov/dataset/boston-police-department-fio">Boston Field Interrogation Database</a></td> 
+			    <td>Smith</td> 
+			    <td><a href= "/data_download/BOS"> Download here </a></td>
+			  </tr>
+			  <tr>
+			    <td>Philidelphia Police Department</td>
+			    <td><a href="https://www.opendataphilly.org/dataset/vehicle-pedestrian-investigations"> Phildelphia Veichle and Pedestrian search database</a></td> 
+			    <td>Smith</td> 
+			    <td><a href= "/data_download/PHI">Download here </a></td>
+			  </tr>
+			  <tr>
+			    <td>New Orleans Police Department</td>
+			    <td><a href="https://data.nola.gov/Public-Safety-and-Preparedness/Stop-and-Search-Field-Interviews-/kitu-f4uy">New Orleans Feild Interview Database </a></td> 
+			    <td>Smith</td> 
+			    <td><a href= "/data_download/NOLA">Download here</a></td>
+			  </tr>
+			</table>
+		</div>
+</div>
+
+{% endblock %}

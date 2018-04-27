@@ -1,0 +1,95 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Results
+{% endblock %}
+
+
+{% block main %}
+
+<script src="https://connect.facebook.net/en_US/sdk.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+
+
+
+<div style="text-align:center;">
+	<h2>In 2016, the {{dept}} stoped {{rows}} People </h2>. 
+	Of those {{rows}} people, 
+	<h1> {{stops_num}} people </h1> 
+	<h2> (or {{stops_perc}}% of Stops) </h2>
+	 matched your profile.
+	</br>
+	</br>
+
+	<!-- link= /more_details/NYC/{{race}}/{{sex}}/{{age}}/{{hair}}/{{eye}} -->
+
+	<div class = "row align-items-center justify-content-center">
+		<div class="col-4">
+			<a href = "#"> <button id="more" type="button" class="btn btn-outline-primary btn-lg" data-container="body" data-trigger="hover" data-placement="right" data-content="Coming soon: Data on Police-Individual Encounters, and Police Use of Force." >Click here for more info on your profile!</button></a>
+		</div>
+	</div>
+	</br>
+	<div class = "row align-items-center justify-content-center">
+		<div class="col-4 center-block">
+			<img id="fbshare" src="{{url_for('static',filename='img/fb_share.png')}}">
+		</div>
+		<div class="col-4 center-block">
+			<a href="https://twitter.com/intent/tweet?text={{stops_perc}}%25 of stops made by {{dept}} were of poeple who matched my profile. See what your percentage is at www.wouldtheystop.me"><img src="{{url_for('static',filename='img/twitter_share.png')}}"></a>
+		</div>
+	</div>
+	</br>
+	<div class = "row align-items-center justify-content-center">
+		<div class="col-4 center-block">
+			<a href = "https://sunlightfoundation.com/2015/03/02/stop-and-frisk-in-4-cities-the-importance-of-open-police-data-2/"><button type="button" class="btn btn-primary btn-lg">Click here for more info on Police Stops and Open Data</button></a>
+		</div>
+	</div>
+	</br>		
+	<div class = "row align-items-center justify-content-center">
+		<div class="col-4 center-block">
+			<a href = "/data"><button type="button" class="btn btn-primary btn-lg">Click here to learn more about this project</button></a>
+		</div>	
+	</div>
+	</br>
+	<div class = "row align-items-center justify-content-center">
+		<div class="col-4 center-block">
+			<a href = "http://ifedayo.me"><button type="button" class="btn btn-primary btn-lg">Click here to check out the guy who made this!</button></a>
+		</div>	
+	</div>	 
+</div>
+
+<div style="bottom:0;text-align:center;">
+	<br>
+	<br>
+	Site Developed by: <a href="http://ifedayo.me"> Ifedayo Famojuro </a> <br>
+	Share buttons Illustrated by: <a href="https://www.iconfinder.com/wbsl"> Wiliams Solutions </a>
+</div>
+
+<script type="text/javascript">
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '229359907800367',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v2.12'
+    });
+  }
+
+	$("#fbshare").click(function(){
+		console.log("clicked")
+		FB.ui({
+		    method: 'share',
+		    display: 'popup',
+		    href: 'http://www.wouldtheystop.me',
+		    quote: "{{stops_perc}}% of stops made by {{dept}} were of poeple who matched my profile. See what your percentage is at wouldtheystop.me"
+		  }, function(response){});
+	})
+
+	
+	$(function () {
+  $('#more').popover({ trigger: "hover" });
+})
+
+
+</script>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+Flask==0.12.2
+Flask-Bcrypt==0.7.1
+Flask-Celery==2.4.3
+Flask-Compress==1.4.0
+Flask-Cors==3.0.3
+Flask-FlatPages==0.6
+Flask-Login==0.4.0
+Flask-Script==2.0.6
+Flask-SocketIO==2.9.3
+Flask-SQLAlchemy==2.3.2
+Jinja2==2.9.6
+pandas==0.20.3
+pandocfilters==1.4.2
+gunicorn

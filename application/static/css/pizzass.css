@@ -1,0 +1,136 @@
+.bg_cont{
+  width: 100vw;
+  height:100vh;
+  overflow: hidden;
+  z-index: 0;
+  position: relative;
+}
+
+.bg{
+  min-width:100%;
+  max-height:auto;
+  z-index: 0;
+}
+.bg_cont .overlay {
+    opacity: 0.3;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 5;
+    background-color: #000000;
+    align-items: center;
+    text-align: center;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+
+.ife-nav{
+  position: fixed; 
+  top: 0;
+  z-index:2;
+  color: white;
+  width: 100vw;
+  background-color: black;
+}
+.logo{
+  height: 5vh;
+  width:auto;
+}
+
+.menu{
+  height: 5vh;
+  width: auto;
+  bottom: 0;
+  margin-top:1vh;
+}
+
+.wrap{ 
+  right: 0; 
+  bottom: 0; 
+  left: 0;
+  overflow:auto;
+  height:93vh;
+  width:100vw;
+  z-index: 100;
+  position: absolute;
+  z-index: 100
+
+}
+
+.fleft{
+  float:left; 
+  width:55%;
+  height:100%;
+}
+
+.fright{
+  float: right;
+  width:45%;
+  height:100%;
+  z-index: 55;
+  color: white;
+}
+
+.bio-wrap{ 
+  right: 0; 
+  bottom: 0; 
+  left: 0;
+  overflow:auto;
+  height:100vh;
+  width:100vw;
+
+}
+
+.fleft-2{
+  float:left; 
+  width:50%;
+  height:100%;
+}
+
+.fright-2{
+  float: right;
+  width:50%;
+  height:100%;
+}
+
+
+.homepg {
+    width:100%;
+    height:100%;
+}
+
+.page_1 {
+    width:100vh;
+    height:100vh;
+}
+
+
+@font-face {
+    font-family:"masthead_font";
+    src: url(../fonts/KGHAPPY.ttf) format("truetype");
+}
+
+
+@font-face {
+    font-family:"code_font";
+    src: url(../fonts/code_font.ttf) format("truetype");
+}
+
+
+@font-face {
+    font-family:"goofy";
+    src: url(../fonts/goof.ttf) format("truetype");
+}
+
+@font-face {
+    font-family:"fancy";
+    src: url(../fonts/fancy.ttf) format("truetype");
+}
+
+
+@font-face {
+    font-family:"pops";
+    src: url(../fonts/pops.ttf) format("truetype");
+}
+
