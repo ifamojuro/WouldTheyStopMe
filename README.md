@@ -1,2 +1,1 @@
-# WouldTheyStopMe
-repository of www.wouldtheystop.me
+# stop_and_frisk_app
