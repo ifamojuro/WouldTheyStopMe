@@ -5,24 +5,46 @@
 
 {% block main %}
 
-<div id="motivation">
-	<span> <h1>Why I Did This</h1></span>
-	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.js"></script>
+
+
+
+<div id="motivation-header" style="height:65vh;width:100vw;background-color:black;display:flex;flex-direction:column;flex-wrap:wrap;">
+	<span style="line-height:7vh;">.</span>
+	  <h2 id="headline" style="flex: 1 1 auto;text-align:center;line-height:13vh;font-size:5vw;"><a style="color:white;flex: 1 0 12em;" href="https://www.thecrimson.com/article/2018/4/15/undergrad-arrested/">On April 13, 2018, an unarmed black male was beaten by police,</a> <a style="color:white;flex: 1 1 auto;" href="https://orgs.law.harvard.edu/blsa/media-gallery/police-brutality-at-harvard-april-13-2018/">0.6 Miles away from my dorm room.</a></h2>
 </div>
+<div>
+	I wanted this feel personal. Thus, this app was born. 	
+</div>
+	  
+
 
 
 <div id="help-me">
-		<span><h1>How You can Help</h1></span>
+		<span><h1> 4 Ways You can Help</h1></span>
 
-		<span><h2>1.Give Me Data For an Experiment</h2></span>
+		<span><h2>1.Educate Yourself</h2></span>
+		Learn about racial bias in policing
+		Learn about the policies that govern police-civilian interacations (stops, frisks, searches, pat-downs, street interogations)
+		Learn about the effects these policies have had on poeple and communities
 
-		<span><h2>2.Keep Me Accountable</h2></span>	
+		<span><h2>2.Police Police Data</h2></span>
+		- No standardized way for police
+		- some of the Data categories is subjective (Boston -> has the Complexion field, NY has the Build Field)
+			- Theres no standardized format for detailing police data, publiciay avalable, searhces, stops, indivisual interactions
+		-this presents a problem for data scientisits. The role of data is place subjective happenings in an objective context, such that we cna study them in an objective way
+		-It's hard for me to trust it
+		- Ensure that Police Departments are reporting data in accurate ways, so that we can accuratel study it
+		- need to be transparent with this
+
+
+
+		<span><h2>3.Keep Me Accountable</h2></span>	
 		<div>
-		<a href="https://github.com/ifamojuro/stop_and_frisk_app"><strong> Check out the Github Repo for this project here! 
-		</strong></a> If you're technically inclined, please check my code. One of the goals of this project is to stress the need for transparency in data managment/analyisis. I also aim to hold my self responsible to this.
+			Hello all! I am a perosn, and there's a definite posibility that I made mistakes while making this. Please hold me accountable. In the intrest of transparency, I've made my code publicly available. <a href="https://github.com/ifamojuro/stop_and_frisk_app"><strong> Check out the Github Repo for this project here! </strong></a> If you're technically inclined, please double check my code. One of the goals of this project is to stress the need for transparency in data managment/analyisis. I also aim to hold my self responsible to this.
 		</div>
 
-		<span><h2>3. Check out the Data, Do something </h2></span>	
+		<span><h2>4. Check out the Data, Do something </h2></span>	
 
 		<div style="text-align:center;">
 			<h1> Data Sources </h1>
@@ -39,23 +61,29 @@
 			    <td>Smith</td> 
 			    <td><a href= "/data_download/NYC">Download here </a></td>
 			  </tr>
-			  <tr>
-			    <td>City of Boston Police Department</td>
+			  <tr
+>			    <td>City of Boston Police Department</td>
 			    <td><a href="https://data.boston.gov/dataset/boston-police-department-fio">Boston Field Interrogation Database</a></td> 
-			    <td>Smith</td> 
+			    <td>I've filtered down data points, such as to only include incidents that happend from 01/01/2016 to 01/01/2017</td> 
 			    <td><a href= "/data_download/BOS"> Download here </a></td>
 			  </tr>
 			  <tr>
 			    <td>Philidelphia Police Department</td>
 			    <td><a href="https://www.opendataphilly.org/dataset/vehicle-pedestrian-investigations"> Phildelphia Veichle and Pedestrian search database</a></td> 
-			    <td>Smith</td> 
+			    <td>I've filtered down stops, such as to only include incidents that happend from 01/01/2016 to 01/01/2017</td> 
 			    <td><a href= "/data_download/PHI">Download here </a></td>
 			  </tr>
 			  <tr>
 			    <td>New Orleans Police Department</td>
 			    <td><a href="https://data.nola.gov/Public-Safety-and-Preparedness/Stop-and-Search-Field-Interviews-/kitu-f4uy">New Orleans Feild Interview Database </a></td> 
-			    <td>Smith</td> 
+			    <td>I've filtered down stops, such as to only include incidents that happend from 01/01/2016 to 01/01/2017</td> 
 			    <td><a href= "/data_download/NOLA">Download here</a></td>
+			  </tr>
+			  <tr>
+			    <td>Las Angeles Police Department</td>
+			    <td><a href="https://data.lacity.org/A-Safe-City/Vehicle-and-Pedestrian-Stop-Data-2010-to-Present/ci25-wgt7">LAPD: Vehicle and Pedestrian Stop Data 2010 to Present </a></td> 
+			    <td>I've filtered down stops, such as to only include incidents that happend from 01/01/2016 to 01/01/2017</td> 
+			    <td><a href= "/data_download/LA">Download here</a></td>
 			  </tr>
 			</table>
 		</div>
